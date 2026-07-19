@@ -97,7 +97,7 @@ ocr_reader = load_ocr()
 
 @st.cache_data
 def load_dataset():
-    df = pd.read_excel(r"C:\Users\DELL\Downloads\fav dataset.xlsx")
+    df = pd.read_excel("fav dataset.xlsx")
     df["combined_text"] = (
         df["headline"].astype(str)
         + " "
