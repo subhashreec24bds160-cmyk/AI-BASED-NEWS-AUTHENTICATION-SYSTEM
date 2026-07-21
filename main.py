@@ -8,7 +8,7 @@ from sklearn.ensemble import RandomForestClassifier
 # LOAD DATASET
 # ==========================================
 
-df = pd.read_excel(r"C:\Users\DELL\Downloads\fav dataset.xlsx")
+df = pd.read_excel("fav dataset.xlsx",engine="openpyxl")
 
 print("Dataset Shape:", df.shape)
 
